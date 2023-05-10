@@ -3,7 +3,7 @@ version: '3'
 services:
   db:
     image: mysql:8.0
-    container_name: db-norkon-blog
+    container_name: db-norkon
     restart: unless-stopped
     env_file: .env
     environment:
@@ -16,8 +16,8 @@ services:
   wordpress:
     depends_on:
       - db
-    image: wordpress:6.2.0-php8.1-fpm-alpine
-    container_name: wordpress-norkon-blog
+    image: wordpress:5.1.1-fpm-alpine
+    container_name: wordpress-norkon
     restart: unless-stopped
     env_file: .env
     environment:
@@ -33,7 +33,7 @@ services:
     depends_on:
       - wordpress
     image: nginx:1.15.12-alpine
-    container_name: webserver-norkon-blog
+    container_name: webserver-norkon
     restart: unless-stopped
     ports:
       - "80:80"
@@ -45,9 +45,7 @@ services:
 
 volumes:
   hueman:
-    external: true
   dbdata:
-    external: true
 
 
 networks:
