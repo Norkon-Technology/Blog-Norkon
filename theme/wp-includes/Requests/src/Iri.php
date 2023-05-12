@@ -135,7 +135,7 @@ class Iri {
 			'port' => Port::DICT,
 		),
 		'file' => array(
-			'ihost' => 'localhost',
+			'ihost' => 'blog.norkontecnology.com',
 		),
 		'http' => array(
 			'port' => Port::HTTP,

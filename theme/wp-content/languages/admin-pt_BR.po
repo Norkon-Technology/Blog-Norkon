@@ -7300,7 +7300,7 @@ msgstr "Links permanentes podem conter informações úteis, como a data do post
 msgid "You can create the %s file manually and paste the following text into it."
 msgstr "Você pode criar arquivo %s manualmente e colar o seguinte texto dentro dele."
 
-#. translators: %s: localhost
+#. translators: %s: blog.norkontecnology.com
 #: wp-admin/setup-config.php:245
 msgid "You should be able to get this info from your web host, if %s does not work."
 msgstr "Você deve ser capaz de obter esta informação no seu servidor de hospedagem, caso %s não funcione."
