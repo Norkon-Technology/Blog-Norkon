@@ -39,7 +39,7 @@ services:
     container_name: webserver-norkon
     restart: unless-stopped
     ports:
-      - "80"
+      - "80:80"
     volumes:
       - ./theme:/var/www/html
       - ./nginx:/etc/nginx/conf.d
