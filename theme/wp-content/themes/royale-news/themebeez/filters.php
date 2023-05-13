@@ -87,7 +87,7 @@ if ( ! function_exists( 'royale_news_comment_form_fields' ) ) {
 			'author' => '<div class="form-group"><label for="author">' . esc_html__( 'Full Name *', 'royale-news' ) . '</label><input class="form-input" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" ' . $aria_req . ' /></div>' . ( $req ? '<span class="required"></span>' : '' ),
 			'email'  => '<div class="form-group"><label for="email">' . esc_html__( 'Email Address *', 'royale-news' ) . '</label><input class="form-input" id="email" name="email" ' . ( $html5 ? 'type="email"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_email'] ) . '" ' . $aria_req . ' /></div>' . ( $req ? '<span class="required"></span>' : '' ),
 
-			'url'    => '<div class="form-group"><label for="url">' . esc_html__( 'Website', 'royale-news' ) . '</label><input class="form-input" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>',
+			'url'    => '<div class="form-group" style="display: none"><label for="url">' . esc_html__( 'Website', 'royale-news' ) . '</label><input class="form-input" id="url" name="url" ' . ( $html5 ? 'type="url"' : 'type="text"' ) . ' value="' . esc_attr( $commenter['comment_author_url'] ) . '" /></div>',
 		);
 
 		return $fields;

@@ -271,6 +271,21 @@ function royale_news_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'royale_news_scripts' );
 
+add_action('wp_head','my_analytics', 20);
+function my_analytics() {
+?>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5TW905R4YH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5TW905R4YH');
+</script>
+<?php
+}
+
 /**
  * Implement the Custom Header feature.
  */
